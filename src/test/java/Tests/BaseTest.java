@@ -1,5 +1,6 @@
+package Tests;
+
 import Utility.Driver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +16,6 @@ public class BaseTest {
         if (driver == null) {
             throw new IllegalStateException("Driver is null.");
         }
-        driver.manage().window().maximize();
         context.setAttribute("driver",driver);
     }
 

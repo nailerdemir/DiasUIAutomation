@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DiasUIAutomation" verbose="1" >
+    <test name="Selenium Tests">
+        <classes>
+            <class name="Runners.TestRunner" /> <!-- Test Runner sınıfınızın tam yolunu yazın -->
+        </classes>
+    </test>
+</suite>
