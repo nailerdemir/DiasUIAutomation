@@ -19,11 +19,17 @@ public class MainPageSteps {
 
     @Then("the main page URL should be correct")
     public void theMainPageUrlShouldBeCorrect(){
-        Assert.assertEquals(mainPage.getCurrentUrl(),mainPage.getExpectUrl(),"The expected URL and the current URL are different.");
+        Assert.assertEquals(mainPage.getCurrentUrl(),mainPage.getExpectMainPageUrl(),"The expected URL and the current URL are different.");
     }
 
     @Then("go to tablet category")
     public void goToTabletCategory(){
-        mainPage.goToCategory();
+        mainPage.goToTabletCategory();
+        mainPage.sleep(2000);
+    }
+
+    @Then("the tablet page URL should be correct")
+    public void theTabletPageURLShouldBeCorrect(){
+        Assert.assertEquals(mainPage.getCurrentUrl(),mainPage.getExpectTablePageUrl(),"The expected URL and the current URL are different.");
     }
 }

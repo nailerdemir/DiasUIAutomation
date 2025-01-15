@@ -7,7 +7,6 @@ public class Hooks { // Bu sınıfı StepDefinitions paketine ekleyin
 
     @After // io.cucumber.java.After import edin
     public void tearDown() {
-        System.out.println("Senaryo sonrası tarayıcı kapatılıyor...");
         Driver.closeDriver();
     }
 }
