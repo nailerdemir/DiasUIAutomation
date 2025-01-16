@@ -3,9 +3,9 @@ package StepDefinitions;
 import Utility.Driver;
 import io.cucumber.java.After;
 
-public class Hooks { // Bu sınıfı StepDefinitions paketine ekleyin
+public class Hooks {
 
-    @After // io.cucumber.java.After import edin
+    @After
     public void tearDown() {
         Driver.closeDriver();
     }
