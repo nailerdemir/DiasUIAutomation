@@ -32,7 +32,6 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null) {
-            System.out.println("closeDriver metodu çağırıldı.");
             driver.quit();
         }
     }
