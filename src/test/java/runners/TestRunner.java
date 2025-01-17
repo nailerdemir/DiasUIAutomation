@@ -1,14 +1,14 @@
-package Runners;
+package runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.Listeners;
-import Utility.Listener;
+import utility.TestListener;
 
-@Listeners(Listener.class)
+@Listeners(TestListener.class)
 @CucumberOptions(
     features = "src/test/resources/Features",
-    glue = {"StepDefinitions"},
+    glue = {"stepDefinitions"},
     plugin = {
         "pretty",
         "json:target/cucumber-reports/cucumber.json",

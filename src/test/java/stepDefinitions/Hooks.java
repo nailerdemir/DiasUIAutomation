@@ -1,6 +1,6 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Utility.Driver;
+import utility.Driver;
 import io.cucumber.java.After;
 
 public class Hooks {

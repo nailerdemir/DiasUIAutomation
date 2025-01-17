@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Cucumber Test Suite">
     <listeners>
-        <listener class-name="Utility.Listener"/>
+        <listener class-name="utility.TestListener"/>
     </listeners>
     
-    <test name="Cucumber Tests">
+    <test name="Cucumber tests">
         <classes>
-            <class name="Runners.TestRunner"/>
+            <class name="runners.TestRunner"/>
         </classes>
     </test>
 </suite>

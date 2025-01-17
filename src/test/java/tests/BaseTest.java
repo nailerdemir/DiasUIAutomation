@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import Utility.Driver;
+import utility.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
